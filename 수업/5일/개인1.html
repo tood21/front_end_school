@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      @import "reset.css";
+      .cont {
+        box-sizing: border-box;
+        width: 350px;
+        border: 1px solid gray;
+        font-size: 13px;
+        margin: 100px auto;
+        padding: 16px 16px 12px 17px;
+      }
+
+      .cont::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      .top-text {
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 10px;
+      }
+
+      .login {
+        display: block;
+        padding: 15px 0;
+        background: #19ce60;;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      img {
+        width: 60px;
+        height: 12px;
+      }
+      .bottom a {
+        text-decoration: none;
+        color: gray;
+        font-size: 12px;
+      }
+      .bottom-left {
+        float: left;
+      }
+
+      .bottom-left img{
+        width: 10px;
+        height: 14px;
+      }
+      
+      .bottom-right {
+        float: right;
+      }
+
+      .bottom-right img {
+        width: 11px;
+        height: 11px;
+      }
+
+      .id::after {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        border-radius: 100%;
+        background: gray;
+        vertical-align: 3px;
+            margin-left: 5px;
+      }
+    </style>
+</head>
+<body>
+  <section class="cont">
+    <p class="top-text">네이버를 더 안전하고 편리하게 이용하세요</p>
+    <a class="login" href="">
+      <img src="/images/title.png" alt="">
+      네이버
+    </a>
+    <div class="bottom">
+      <div class="bottom-left">
+        <img src="/images/lock.png" alt="">
+        <a class="id" href="">아이디</a>
+        <a href="">비밀번호찾기</a>
+      </div>
+      <div class="bottom-right">  
+        <img src="/images/user.png" alt="">
+        <a href="">회원가입</a>
+      </div>
+    </div>
+  </section>
+    
+</body>
+</html>

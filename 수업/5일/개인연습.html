@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 로그인</title>
+    <style>
+      @import "reset.css";
+      .cont {
+        width: 350px;
+        border: 1px solid gray;
+        margin: 100px auto;
+        padding: 16px 16px 12px 17px;
+      }
+
+      p {
+        font-size: 12px;
+        color: gray;
+      }
+
+      .login {
+        display: block;
+        background: #19ce60;
+        font-size: 13px;
+        color: white;
+        margin-top: 11px;
+        padding: 15px 0;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .login img {
+        width: 60px;
+        height: 12px;
+      }
+
+      footer::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      footer {
+        margin-top: 10px;
+        font-size: 13px;
+        color: gray;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      .footer-left {
+        float: left;
+        
+      }
+
+      .footer-left img {
+        width: 10px;
+        height: 14px;
+        margin-right: 5px;
+      }
+
+      .footer-right {
+        float: right;
+      }
+
+      .footer-right img{
+        width: 11px;
+        height: 11px;
+      }
+
+      .id::after {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        background: gray;
+        border-radius: 50%;
+        vertical-align: 3px;
+        margin-left: 5px;
+
+      }
+
+
+    </style>
+</head>
+<body>
+  <div class="cont">
+    <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+    <a class="login"  href="">
+      <img src="images/title.png" alt="">
+      로그인
+    </a>
+    <footer>
+      <div  class="footer-left">
+        <img src="images/lock.png" alt="">
+        <a class="id" href="">아이디</a>
+        <a href="">비밀번호찾기</a>
+      </div>
+      <div class="footer-right">
+        <img src="images/user.png" alt="">
+        <a href="">회원가입</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
