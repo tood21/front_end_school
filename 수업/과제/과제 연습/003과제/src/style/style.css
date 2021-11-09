@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* util */
-
 .sr-only {
 	position: absolute;
 	left: -9999px;
@@ -29,7 +28,7 @@
 
 /* style */
 .cont-movie {
-	width: 1006px;
+	width: 1060px;
 	margin: 86px auto 0;
 	padding: 0 27px 29px;
 	border: 2px solid #bdbdbd;
@@ -37,50 +36,34 @@
 	background: #e5e5e5;
 }
 
-.cont-movie .tit-cont {
+.title {
+	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
 	text-align: center;
 	line-height: 28px;
 	padding: 38px 0;
 }
 
-.cont-movie .nav-movie::before {
-	display: block;
+.movie-info-nav::before {
 	content: "";
+	display: block;
 	width: 650px;
 	height: 2px;
 	background: #bdbdbd;
 	margin: 0 auto;
 }
 
-.cont-movie .nav-movie {	
+.movie-info nav{
 	text-align: center;
 }
-
-.cont-movie .list-movieNav {
+.movie-info .movie-info-list {
 	display: inline-block;
 	margin: 27px 0;
 }
-
-.cont-movie .list-movieNav li {
+.movie-info .movie-info-list li{
 	float: left;
 }
 
-.cont-movie .list-movieNav li + li{
-	margin-left: 60px;
-}
 
-.cont-movie .list-movieNav .link-nav {
-	color: #828282;
+.movie-info-list .movie-menu {
 }
-
-.cont-movie .list-movieNav .on .link-nav {
-	color: #000;
-	font-weight: bold;
-}
-/* setting */
-/* animaion */
-/* reset */
-/* layout */
-/* design */
-/* media query */
