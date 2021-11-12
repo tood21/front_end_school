@@ -1,0 +1,92 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+/* util */
+
+#app { 
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+  padding: 20px 24px 25px 24px;
+  font-size: 16px;
+  width: 520px;
+  height: 712px;
+  border: 1px solid black;
+  margin: 100px auto;
+  box-sizing: border-box;
+
+}
+
+.header {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+
+.login-form__txt {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+
+.form-login__inp-id {
+  box-sizing: border-box;
+  width: 472px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 16px;
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
+}
+
+.form-login__inp-pass {
+  box-sizing: border-box;
+  width: 472px;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 17px;
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
+}
+
+.state-login {
+  margin-bottom: 21px;
+}
+
+.btn-login {
+  font-size: 18px;
+  width: 472px;
+  height: 50px;
+  background-color: #2F80ED;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.link-ifo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link-join, .link-id {
+  text-decoration: none;
+  color: #767676;
+}
+
+.div-line {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link-sns{
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: #767676;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 472px;
+  height: 50px;
+  border: 1px solid black;
+  line-height: 20px;
+  text-align: center;
+  }
