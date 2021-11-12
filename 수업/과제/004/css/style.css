@@ -1,7 +1,12 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 /* util */
 
+body {
+  background-color: #e5e5e5;
+}
+
 #app { 
+  background-color: white;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
   padding: 20px 24px 25px 24px;
   font-size: 16px;
@@ -10,6 +15,7 @@
   border: 1px solid black;
   margin: 100px auto;
   box-sizing: border-box;
+  overflow: hidden;
 
 }
 
@@ -17,9 +23,31 @@
   text-align: center;
   font-weight: 500;
   margin-bottom: 45px;
+  position: relative;
 }
 
-.login-form__txt {
+.header::after {
+  content: '';
+  display: block;
+  border: 1px solid #c4c4c4;
+  position: absolute;
+  width: 520px;
+  top: 38px;
+  left: -24px;
+}
+
+.tit-header::after {
+  content: '';
+  display: inline-block;
+  background-image: url(../images/close.png);
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+  float: right;
+
+}
+
+.tit-login {
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -49,7 +77,20 @@
 
 .state-login {
   margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #767676;
 }
+
+.state-login__check {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: -4px;
+  width: 22px;
+  height: 22px;
+}
+
 
 .btn-login {
   font-size: 18px;
@@ -70,13 +111,39 @@
 .link-join, .link-id {
   text-decoration: none;
   color: #767676;
+  font-size: 14px;  
+}
+
+.link-join::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #767676;
+  margin: 0 12px ;
+  vertical-align: bottom;
 }
 
 .div-line {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 14px;
+  color: #767676;
 }
 
+.div-line__txt {
+  margin: 0 12px;
+}
+
+.div-line::after, 
+.div-line::before{
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 206px;
+  background-color: #C4C4C4;
+  vertical-align: middle;
+} 
 .link-sns{
   box-sizing: border-box;
   display: block;
@@ -88,5 +155,75 @@
   height: 50px;
   border: 1px solid black;
   line-height: 20px;
+  font-size: 16px;
   text-align: center;
+  border-radius: 5px;
+  padding: 15px 0;
+  position: relative;
   }
+
+  .login-google {
+    border: 1px solid #767676;
+  }
+
+
+  .login-facebook {
+    border: 1px solid #2D9CDB;
+  }
+
+  .login-naver {
+    border: 1px solid #00BF18;
+  }
+
+  .login-kakao {
+    border: 1px solid #F2C94C;
+    margin-bottom: 0;
+  }
+
+.login-google::after {
+  content: '';
+  display: inline-block;
+  background-image: url(../images/Google__G__Logo\ 1.png);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.login-facebook::after {
+  content: '';
+  display: inline-block;
+  background-image: url(../images/facebook.png);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.login-naver::after {
+  content: '';
+  display: inline-block;
+  background-image: url(../images/naver-logo.png);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.login-kakao::after {
+  content: '';
+  display: inline-block;
+  background-image: url(../images/message-circle.png);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  margin-top: -14px;
+}
