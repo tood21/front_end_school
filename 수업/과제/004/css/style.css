@@ -5,18 +5,18 @@ body {
   background-color: #e5e5e5;
 }
 
-#app { 
+#app {
   background-color: white;
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
   padding: 20px 24px 25px 24px;
   font-size: 16px;
   width: 520px;
   height: 712px;
-  border: 1px solid black;
-  margin: 100px auto;
+  border: 1px solid #c4c4c4;
+  margin: 50px auto;
   box-sizing: border-box;
   overflow: hidden;
-
+  border-radius: 10px;
 }
 
 .header {
@@ -26,8 +26,12 @@ body {
   position: relative;
 }
 
+.header .tit-header {
+  display: inline-block;
+}
+
 .header::after {
-  content: '';
+  content: "";
   display: block;
   border: 1px solid #c4c4c4;
   position: absolute;
@@ -36,15 +40,8 @@ body {
   left: -24px;
 }
 
-.tit-header::after {
-  content: '';
-  display: inline-block;
-  background-image: url(../images/close.png);
-  background-size: 16px;
-  width: 16px;
-  height: 16px;
+.img-close {
   float: right;
-
 }
 
 .tit-login {
@@ -54,7 +51,6 @@ body {
   margin-bottom: 24px;
 }
 
-
 .form-login__inp-id {
   box-sizing: border-box;
   width: 472px;
@@ -62,7 +58,7 @@ body {
   margin-bottom: 10px;
   padding-left: 16px;
   border-radius: 5px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 
 .form-login__inp-pass {
@@ -72,35 +68,34 @@ body {
   padding-left: 16px;
   margin-bottom: 17px;
   border-radius: 5px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 
-.state-login {
-  margin-bottom: 21px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #767676;
+[type="checkbox"] {
+  display: none;
 }
-
-.state-login__check {
-  display: inline-block;
-  vertical-align: bottom;
-  margin-top: -4px;
-  width: 22px;
-  height: 22px;
+[type="checkbox"] + label {
+  cursor: pointer;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-image: url("../images/check-box.png");
+  background-size: 20px;
 }
-
+[type="checkbox"]:checked + label {
+  background-image: url("../images/check-box2.png");
+}
 
 .btn-login {
   font-size: 18px;
   width: 472px;
   height: 50px;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   border-radius: 5px;
   color: #ffffff;
   border: none;
+  margin-top: 21px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .link-ifo {
@@ -108,19 +103,20 @@ body {
   margin-bottom: 30px;
 }
 
-.link-join, .link-id {
+.link-join,
+.link-id {
   text-decoration: none;
   color: #767676;
-  font-size: 14px;  
+  font-size: 14px;
 }
 
 .link-join::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 1px;
   height: 16px;
   background-color: #767676;
-  margin: 0 12px ;
+  margin: 0 12px;
   vertical-align: bottom;
 }
 
@@ -135,16 +131,16 @@ body {
   margin: 0 12px;
 }
 
-.div-line::after, 
-.div-line::before{
-  content: '';
+.div-line::after,
+.div-line::before {
+  content: "";
   display: inline-block;
   height: 1px;
   width: 206px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   vertical-align: middle;
-} 
-.link-sns{
+}
+.link-sns {
   box-sizing: border-box;
   display: block;
   text-decoration: none;
@@ -160,70 +156,51 @@ body {
   border-radius: 5px;
   padding: 15px 0;
   position: relative;
-  }
+}
 
-  .login-google {
-    border: 1px solid #767676;
-  }
+.login-google {
+  border: 1px solid #767676;
+}
 
+.login-facebook {
+  border: 1px solid #2d9cdb;
+}
 
-  .login-facebook {
-    border: 1px solid #2D9CDB;
-  }
+.login-naver {
+  border: 1px solid #00bf18;
+}
 
-  .login-naver {
-    border: 1px solid #00BF18;
-  }
+.login-kakao {
+  border: 1px solid #f2c94c;
+  margin-bottom: 0;
+}
 
-  .login-kakao {
-    border: 1px solid #F2C94C;
-    margin-bottom: 0;
-  }
-
-.login-google::after {
-  content: '';
+.login-google::after,
+.login-facebook::after,
+.login-naver::after,
+.login-kakao::after {
+  content: "";
   display: inline-block;
-  background-image: url(../images/Google__G__Logo\ 1.png);
   width: 28px;
   height: 28px;
   position: absolute;
   left: 12px;
   top: 50%;
   margin-top: -14px;
+}
+
+.login-google::after {
+  background-image: url(../images/Google__G__Logo\ 1.png);
 }
 
 .login-facebook::after {
-  content: '';
-  display: inline-block;
   background-image: url(../images/facebook.png);
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  margin-top: -14px;
 }
 
 .login-naver::after {
-  content: '';
-  display: inline-block;
   background-image: url(../images/naver-logo.png);
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  margin-top: -14px;
 }
 
 .login-kakao::after {
-  content: '';
-  display: inline-block;
   background-image: url(../images/message-circle.png);
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  margin-top: -14px;
 }
