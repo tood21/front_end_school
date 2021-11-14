@@ -16,17 +16,17 @@ body {
   background-color: white;
 }
 
-.img-tit {
+.tit-img {
   margin: 30px auto 28px;
   width: 138px;
   height: 40px;
 }
 
-.txt-login {
+.login-txt{
   margin-bottom: 32px;
 }
 
-.btn-login {
+.login-btn {
   display: block;
   box-sizing: border-box;
   width: 440px;

@@ -11,26 +11,26 @@
   <body>
     <section id="app">
       <header class="header">
-        <h1 class="tit-header">로그인 또는 회원가입</h1>
+        <h1 class="header-tit">로그인 또는 회원가입</h1>
         <a href="main.html">
-          <img src="images/close.png" alt="close" class="img-close" />
+          <img src="images/close.png" alt="close" class="close-img" />
         </a>
       </header>
-      <main class="login-form">
-        <section class="login">
+      <main class="login-cont">
+        <section class="login-weniv">
           <h2 class="blind">아이디와 비밀번호</h2>
-          <p class="tit-login">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
-          <form class="form-login">
+          <p class="login-tit">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+          <form class="login-form">
             <input
               type="text"
               placeholder="아이디"
-              class="form-login__inp-id"
+              class="login-input__id"
               required
             />
             <input
               type="password"
               placeholder="비밀번호"
-              class="form-login__inp-pass"
+              class="login-input__pass"
               required
             />
 
@@ -39,26 +39,26 @@
               class="checker-label"
               >로그인 상태 유지</label
             >
-            <button type="submit" class="btn-login">로그인</button>
+            <button type="submit" class="login-btn">로그인</button>
           </form>
-          <div class="link-ifo">
-            <a href="#none" class="link-join">회원가입</a
-            ><a href="#none" class="link-id">아이디/비밀번호 찾기</a>
+          <div class="link">
+            <a href="#none" class="link__join">회원가입</a
+            ><a href="#none" class="link__id">아이디/비밀번호 찾기</a>
           </div>
         </section>
-        <section class="login-sns">
+        <section class="sns-login">
           <h2 class="blind">소셜 로그인</h2>
           <div class="div-line">
             <span class="div-line__txt">또는</span>
           </div>
-          <a href="#none" class="login-google link-sns">구글 계정으로 로그인</a>
-          <a href="#none" class="login-facebook link-sns"
+          <a href="#none" class="google-login sns-line">구글 계정으로 로그인</a>
+          <a href="#none" class="facebook-login sns-line"
             >페이스북 계정으로 로그인</a
           >
-          <a href="#none" class="login-naver link-sns"
+          <a href="#none" class="naver-login sns-line"
             >네이버 계정으로 로그인</a
           >
-          <a href="#none" class="login-kakao link-sns"
+          <a href="#none" class="kakao-login sns-line"
             >카카오톡 계정으로 로그인</a
           >
         </section>

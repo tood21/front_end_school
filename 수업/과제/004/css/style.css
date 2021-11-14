@@ -26,7 +26,7 @@ body {
   position: relative;
 }
 
-.header .tit-header {
+.header .header-tit {
   display: inline-block;
 }
 
@@ -40,18 +40,18 @@ body {
   left: -24px;
 }
 
-.img-close {
+.close-img {
   float: right;
 }
 
-.tit-login {
+.login-tit{
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
   margin-bottom: 24px;
 }
 
-.form-login__inp-id {
+.login-input__id {
   box-sizing: border-box;
   width: 472px;
   height: 50px;
@@ -61,7 +61,7 @@ body {
   border: 1px solid #c4c4c4;
 }
 
-.form-login__inp-pass {
+.login-input__pass {
   box-sizing: border-box;
   width: 472px;
   height: 50px;
@@ -74,18 +74,23 @@ body {
 [type="checkbox"] {
   display: none;
 }
+
 [type="checkbox"] + label {
   cursor: pointer;
   padding-left: 30px;
   background-repeat: no-repeat;
   background-image: url("../images/check-box.png");
-  background-size: 20px;
 }
+
 [type="checkbox"]:checked + label {
   background-image: url("../images/check-box2.png");
 }
 
-.btn-login {
+.checker-label {
+  line-height: 20px;
+}
+
+.login-btn {
   font-size: 18px;
   width: 472px;
   height: 50px;
@@ -98,19 +103,19 @@ body {
   cursor: pointer;
 }
 
-.link-ifo {
+.link {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.link-join,
-.link-id {
+.link__join,
+.link__id {
   text-decoration: none;
   color: #767676;
   font-size: 14px;
 }
 
-.link-join::after {
+.link__join::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -140,7 +145,7 @@ body {
   background-color: #c4c4c4;
   vertical-align: middle;
 }
-.link-sns {
+.sns-line {
   box-sizing: border-box;
   display: block;
   text-decoration: none;
@@ -149,7 +154,6 @@ body {
   margin-bottom: 10px;
   width: 472px;
   height: 50px;
-  border: 1px solid black;
   line-height: 20px;
   font-size: 16px;
   text-align: center;
@@ -158,27 +162,27 @@ body {
   position: relative;
 }
 
-.login-google {
+.google-login {
   border: 1px solid #767676;
 }
 
-.login-facebook {
+.facebook-login {
   border: 1px solid #2d9cdb;
 }
 
-.login-naver {
+.naver-login {
   border: 1px solid #00bf18;
 }
 
-.login-kakao {
+.kakao-login {
   border: 1px solid #f2c94c;
   margin-bottom: 0;
 }
 
-.login-google::after,
-.login-facebook::after,
-.login-naver::after,
-.login-kakao::after {
+.google-login::after,
+.facebook-login::after,
+.naver-login::after,
+.kakao-login::after {
   content: "";
   display: inline-block;
   width: 28px;
@@ -189,18 +193,18 @@ body {
   margin-top: -14px;
 }
 
-.login-google::after {
+.google-login::after {
   background-image: url(../images/Google__G__Logo\ 1.png);
 }
 
-.login-facebook::after {
+.facebook-login::after {
   background-image: url(../images/facebook.png);
 }
 
-.login-naver::after {
+.naver-login::after {
   background-image: url(../images/naver-logo.png);
 }
 
-.login-kakao::after {
+.kakao-login::after {
   background-image: url(../images/message-circle.png);
 }
