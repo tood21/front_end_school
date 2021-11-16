@@ -1,0 +1,104 @@
+.link-sns-login {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #767676;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+
+.link-sns-login::before {
+  content: '';
+  background-image: url(../images-login/icon_google.png);
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-left: 16px;
+}
+
+.icon-facebook{
+  border-color: #2D9CDB;
+}
+
+.icon-facebook::before {
+  background-image: url(../images-login/icon_facebook.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-naver{
+  border-color: #00BF18;
+}
+
+.icon-naver::before {
+  background-image: url(../images-login/icon_naver.png);
+}
+
+.icon-kakao{
+  border-color: #F2C94C;
+}
+
+.icon-kakao::before {
+  background-image: url(../images-login/icon_kakao.png);
+}
+
+.btn-login {
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 0;
+  background-color: #2F80ED;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-close {
+  padding: 0;
+  border: none;
+}
+
+.btn-close img{
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline;
+}
+
+.module-inp.module-inp-id.error .inp-login {
+  border: 2px solid #f4492e;
+}
+
+.module-inp .inp-login {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  border: 1px solid #c4c4c4;
+  padding: 15px 0 15px 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.module-inp .inp-error {
+  display: none;
+  margin: 6px 0 0 4px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #f4492e;
+}
+
+.module-inp.error .inp-error {
+  display: block;
+}
+
+.module-inp + .module-inp {
+  margin-top: 10px;
+}
