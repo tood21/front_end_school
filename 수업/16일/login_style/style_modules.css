@@ -72,9 +72,14 @@
   width: 22px;
   height: 22px;
   content: '';
-  background-image: url(../images-login/icon_google.png);
+  background-image: url(../images2x/css_sprites.png) ;
+  background-size: 117px 84px;
   float: left;
   margin-left: 16px;
+}
+
+.link-sns-login.icon-google::before {
+  background-position: -52px -10px;
 }
 
 .link-sns-login.icon-naver {
@@ -82,8 +87,7 @@
 }
 
 .link-sns-login.icon-naver::before {
-  
-  background-image: url(../images-login/icon_naver.png);
+  background-position: -10px -52px;
 }
 
 .link-sns-login.icon-facebook {
@@ -91,17 +95,30 @@
 }
 
 .link-sns-login.icon-facebook::before {
-  background-image: url(../images-login/icon_facebook.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: -90px -10px;
+  height: 24px;
 }
 
-.link-sns-login.icon-naver {
+.link-sns-login.icon-kakao {
   border-color: #F2C94C;
 }
 
-.link-sns-login.icon-naver::before {
-  background-image: url(../images-login/icon_kakao.png);
-  background-repeat: no-repeat;
+.link-sns-login.icon-kakao::before {
+  background-position: -10px -10px;
 }
+/* 래티나 디스 플레이 대응 */
+/* @media screen and(-webkit-min-device-pixel-ratio :2 ) {
+  .link-sns-login::before{
+      display: block;
+      content:"";
+      float:left;
+      width:22px;
+      height:22px;
+      margin-left:16px;
+      background:url("../images-login/css_sprites_retina.png") -52px -10px / 117px 84px;
+  }
 
+  .link-sns-login.icon-kakao::before{
+      background-position: -10px -52px;
+   }
+} */

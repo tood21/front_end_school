@@ -1,0 +1,52 @@
+.txt-hide{
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+/* reset */
+
+button {
+  /* background: none;
+  border: none; */
+}
+
+.cont-select {
+  padding: 20px;
+  background-color: #fff;
+  margin: 30px auto 0;
+  border: 1px solid black ;
+  width: 300px;
+}
+
+.btn-select {
+  display: block;
+  width: 200px;
+  font-size: 14px;
+  line-height: 16px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+  padding: 13px 0 13px 14px;
+  text-align: left;
+  margin-bottom: 9px;
+  background-color: #FFFFFF;
+}
+
+.list-member {
+  box-sizing: border-box;
+  width: 200px;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.list-member li button{
+  width: 100%;
+  padding: 12px 0 12px 18px;
+}
