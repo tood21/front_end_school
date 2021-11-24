@@ -23,53 +23,50 @@ body {
 }
 
 #app {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0 28px;
-    padding-top: 247px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-#app .vending-machine, #app .my-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0 28px;
+  padding-top: 247px;
+  font-family: 'Noto Sans KR', sans-serif;
+  .vending-machine,
+  .my-info{
     width: 360px;
     /* height: 545px; */
     background-color: #fff;
     box-sizing: border-box;
+  } 
+  .tit-app {
+      top: 0;
+      width: 100%;
+      max-width: 386px;
+      height: 180px;
+      background: no-repeat center / 100% 100% url(../img/Logo_img.png);
+  }
 }
 
-/* 타이틀 스타일링 */
-.tit-app {
-    top: 0;
-    width: 100%;
-    max-width: 386px;
-    height: 180px;
-    background: no-repeat center / 100% 100% url(../img/Logo_img.png);
-}
 
-/* 자판기 스타일링 */
+
 #app .vending-machine {
     position: relative;
     padding: 31px 27px 28px;
+    .list-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* align-items: space-between; */
+      li {
+        position: relative;
+        width: 30%;
+        height: 130px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
 /* 자판기 아이템 리스트 */
-.vending-machine .list-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* align-items: space-between; */
-}
-
-.vending-machine .list-item li {
-    position: relative;
-    width: 30%;
-    height: 130px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-}
-
 /* .vending-machine .list-item li.on */
 /* .vending-machine .list-item li:active::before { */
 .vending-machine .list-item li:active::before{
@@ -302,22 +299,10 @@ row  잔액,         거스름돈 반환
     font-size: 12px;
     margin-top: 6px;
 }
-@media only screen /* only : 전체 쿼리가 일치할 때만 적용, screen: 코드가 적용될 미디어 유형 */
-  and (min-device-width: 320px) /*기기의 넓이가 320 이상*/
-  and (max-device-width: 480px) /*기기의 넓이가 420 이하*/
-  and (-webkit-min-device-pixel-ratio: 2) { /* 최소 1px 당 2개의 화소 */
-    body{
-        background-color: #fff;
+
+@media screen 
+    and (min-device-width: 320px)
+      
+    {
+    
     }
-    #app{
-        padding-top:65px;
-    }
-    #app .tit-app{
-        width:166px;
-        height: 70px;
-    }
-    .my-info .cont-myitems{
-        margin-top:0;
-        padding: 31px 27px 32px;
-    }
-}
