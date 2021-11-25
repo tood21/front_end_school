@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>dropdown select box</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="113.css">
-</head>
-<style>
-  h2 {
-    margin: 30px;
-  }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>dropdown select box</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="113.css" />
+  </head>
+  <style>
+    h2 {
+      margin: 30px;
+    }
 
-  .cont-select {
-    width: 200px;
-    position: relative;
-  }
+    .cont-select {
+      width: 200px;
+      position: relative;
+    }
 
-  .btn-select {
-    width: 100%;
-    padding: 13px 20px 13px 14px ;
-    font-size: 12px;
-    line-height: 14px;
-    background-color: #fff;
-    border: 1px solid #c4c4c4;
-    box-sizing: border-box;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: left;
-    background: url(icon-Triangle-down.png) center right 14px no-repeat;
+    .btn-select {
+      width: 100%;
+      padding: 13px 20px 13px 14px;
+      font-size: 12px;
+      line-height: 14px;
+      background-color: #fff;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: left;
+      background: url(icon-Triangle-down.png) center right 14px no-repeat;
 
-    /* 말줄임 */
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+      /* 말줄임 */
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
 
-  .btn-select:hover,
-  .btn-select:focus {
-    border: 1px solid #9B51E0;
-    outline: 3px solid #F8E4FF;
-  }
+    .btn-select:hover,
+    .btn-select:focus {
+      border: 1px solid #9b51e0;
+      outline: 3px solid #f8e4ff;
+    }
 
-  .list-member {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 49px;
-    left: 0;
-    background: #FFFFFF;
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 10px
-  }
+    .list-member {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 49px;
+      left: 0;
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
 
-  .btn-select.on {
-    background: url(icon-Triangle-up.png) center right 14px no-repeat;
-  }
+    .btn-select.on {
+      background: url(icon-Triangle-up.png) center right 14px no-repeat;
+    }
 
-  .btn-select.on + .list-member {
-    display: block;
-  }
+    .btn-select.on + .list-member {
+      display: block;
+    }
 
-  .list-member li {
-    box-sizing: border-box;
-    height: 40px;
-    padding: 5px 8px;
-  }
+    .list-member li {
+      box-sizing: border-box;
+      height: 40px;
+      padding: 5px 8px;
+    }
 
-  .list-member li button {
-    width: 100%;
-    padding: 7px 10px;
-    border: none;
-    background: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: left;
+    .list-member li button {
+      width: 100%;
+      padding: 7px 10px;
+      border: none;
+      background: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: left;
 
-    /* 말줄임 */
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+      /* 말줄임 */
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
 
-  .list-member li button:hover,
-  .list-member li button:focus {
-    background: #F8E4FF;
-  }
-
-</style>
-<body>
+    .list-member li button:hover,
+    .list-member li button:focus {
+      background: #f8e4ff;
+    }
+  </style>
+  <body>
     <h2 class="txt-hide">셀렉트 박스 만들기</h2>
     <article class="cont-select">
-        <button class="btn-select">최애 프로그래밍 언어</button>
-        <ul class="list-member">
-            <li><button type="button">Python</button></li>
-            <li><button type="button">Java</button></li>
-            <li><button type="button">JavaScript</button></li>
-            <li><button type="button">C#</button></li>
-            <li><button type="button">C/C++</button></li>
-        </ul>
+      <button class="btn-select">최애 프로그래밍 언어</button>
+      <ul class="list-member">
+        <li><button type="button">Python</button></li>
+        <li><button type="button">Java</button></li>
+        <li><button type="button">JavaScript</button></li>
+        <li><button type="button">C#</button></li>
+        <li><button type="button">C/C++</button></li>
+      </ul>
     </article>
 
     <script>
-        const btn = document.querySelector('.btn-select');
-        const list = document.querySelector('.list-member');
-        btn.addEventListener('click', () => {
-            btn.classList.toggle('on');
-        });
-        list.addEventListener('click', (event) => {
-            if (event.target.nodeName === "BUTTON") {
-                btn.innerText = event.target.innerText;
-                btn.classList.remove('on');
-            }
-        });
+      const btn = document.querySelector(".btn-select");
+      const list = document.querySelector(".list-member");
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("on");
+      });
+      list.addEventListener("click", (event) => {
+        if (event.target.nodeName === "BUTTON") {
+          btn.innerText = event.target.innerText;
+          btn.classList.remove("on");
+        }
+      });
     </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,77 @@
+h2 {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.cont-select {
+  width: 200px;
+  position: relative;
+  .btn-select {
+    width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px 30px 13px 14px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: left;
+    background: url("./icon-Triangle-down.png") 176px center / 10px 10px
+      no-repeat;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    &:focus {
+      outline: 3px solid #f8e4ff;
+    }
+  }
+}
+.btn-select.on {
+  background: url("./icon-Triangle-up.png") 176px center / 10px 10px no-repeat;
+  outline: 3px solid #f8e4ff;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px 30px 12px 14px;
+}
+
+.btn-select.on + .list-member {
+  display: block;
+}
+
+.list-member {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  display: none;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  li {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 5px 8px;
+    button {
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 7px 10px;
+      text-align: left;
+      background-color: #fff;
+      border-radius: 8px;
+      width: 100%;
+      border: none;
+      &:hover,
+      &:focus {
+        background-color: #f8e4ff;
+      }
+    }
+  }
+}
