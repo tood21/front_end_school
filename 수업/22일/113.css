@@ -8,18 +8,10 @@
 }
 
 
-/* reset */
-
-button {
-  /* background: none;
-  border: none; */
-}
-
 .cont-select {
   padding: 20px;
   background-color: #fff;
   margin: 30px auto 0;
-  border: 1px solid black ;
   width: 300px;
 }
 
@@ -35,7 +27,11 @@ button {
   text-align: left;
   margin-bottom: 9px;
   background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 4px 4px 14px 0px #00000026;
 }
+
+
 
 .btn-select::after {
   content: '';
@@ -45,13 +41,21 @@ button {
   float: right;
   margin-right: 13px;
   margin-top: 3px;
+  transform: rotate(180deg);
 }
 
-.btn-select.on {
+.btn-select.on  {
   border: 1px solid #9B51E0;
 }
 
+.btn-select.on + .list-member {
+  display: block;
+}
+
+
 .list-member {
+  display: none;
+  box-shadow: 4px 4px 14px 0px #00000026;
   box-sizing: border-box;
   width: 200px;
   border: 1px solid #C4C4C4;
