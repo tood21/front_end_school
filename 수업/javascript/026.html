@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <style></style>
+  </head>
+
+  <body>
+    <script>
+      const userdb = [
+        {
+          _id: "61b05e5ce6b8e3730346d215",
+          id: "Reynolds",
+          pw: "2ded4cfa-cda2-403a-b4c1-1627d1d076a6",
+          index: 0,
+          picture: "http://placehold.it/32x32",
+          age: 32,
+          eyeColor: "blue",
+          name: "Allie Mcbride",
+          gender: "female",
+          company: "RAMJOB",
+          email: "alliemcbride@ramjob.com",
+          phone: "+1 (875) 556-3610",
+          address: "288 Roebling Street, Sussex, California, 4130",
+          grade: "관리자",
+        },
+        {
+          _id: "61b05e5c812c12d61500d04c",
+          id: "Snow",
+          pw: "5f6fa28c-3f8f-4c62-b740-fc9f9fdad25c",
+          index: 1,
+          picture: "http://placehold.it/32x32",
+          age: 20,
+          eyeColor: "blue",
+          name: "Marina Cummings",
+          gender: "female",
+          company: "PHOLIO",
+          email: "marinacummings@pholio.com",
+          phone: "+1 (869) 440-2268",
+          address: "404 Highland Place, Outlook, Iowa, 1705",
+          grade: "새싹",
+        },
+        {
+          _id: "61b05e5c0c8cb5a59c97bb18",
+          id: "James",
+          pw: "36ee463a-fc32-4e57-8f7a-66c687847efb",
+          index: 2,
+          picture: "http://placehold.it/32x32",
+          age: 21,
+          eyeColor: "green",
+          name: "Sasha May",
+          gender: "female",
+          company: "INQUALA",
+          email: "sashamay@inquala.com",
+          phone: "+1 (948) 545-2522",
+          address: "960 Perry Place, Healy, Louisiana, 7310",
+          grade: "관리자",
+        },
+        {
+          _id: "61b05e5c645e5bc7a96d93e5",
+          id: "Dalton",
+          pw: "002d40d7-9933-45ee-b46e-e6cccb7c75cd",
+          index: 3,
+          picture: "http://placehold.it/32x32",
+          age: 40,
+          eyeColor: "green",
+          name: "Thornton Bonner",
+          gender: "male",
+          company: "JAMNATION",
+          email: "thorntonbonner@jamnation.com",
+          phone: "+1 (849) 458-3163",
+          address: "957 Lake Place, Garberville, Connecticut, 1760",
+          grade: "다이아몬드",
+        },
+        {
+          _id: "61b05e5c58fd8629263693ba",
+          id: "hojun",
+          pw: "1234",
+          index: 4,
+          picture: "http://placehold.it/32x32",
+          age: 25,
+          eyeColor: "green",
+          name: "Wong Foley",
+          gender: "male",
+          company: "SPLINX",
+          email: "wongfoley@splinx.com",
+          phone: "+1 (930) 477-3875",
+          address: "237 Montgomery Street, Defiance, Mississippi, 946",
+          grade: "관리자",
+        },
+        {
+          _id: "61b05e5c94d36e6eccc78e21",
+          id: "Lamb",
+          pw: "e0339c11-96bf-4b1b-b623-637bc16043e4",
+          index: 5,
+          picture: "http://placehold.it/32x32",
+          age: 21,
+          eyeColor: "brown",
+          name: "Hardin Finch",
+          gender: "male",
+          company: "DIGIFAD",
+          email: "hardinfinch@digifad.com",
+          phone: "+1 (872) 552-3784",
+          address: "635 Hyman Court, Golconda, Texas, 4073",
+          grade: "실버",
+        },
+        {
+          _id: "61b05e5c5ec214fc28192f43",
+          id: "Keisha",
+          pw: "e4ebfc2f-eea3-426c-8287-e2bd7507b4c2",
+          index: 6,
+          picture: "http://placehold.it/32x32",
+          age: 20,
+          eyeColor: "brown",
+          name: "Boyer Olson",
+          gender: "male",
+          company: "QUALITEX",
+          email: "boyerolson@qualitex.com",
+          phone: "+1 (865) 546-2711",
+          address: "571 Quentin Street, Crenshaw, Oklahoma, 6978",
+          grade: "관리자",
+        },
+        {
+          _id: "61b05e5cfd1f60a7781f54ba",
+          id: "Dee",
+          pw: "440a7d99-8d7d-47d5-9109-29fc0a50accb",
+          index: 7,
+          picture: "http://placehold.it/32x32",
+          age: 20,
+          eyeColor: "brown",
+          name: "Orr Kirk",
+          gender: "male",
+          company: "OLYMPIX",
+          email: "orrkirk@olympix.com",
+          phone: "+1 (922) 433-2897",
+          address: "377 Meserole Avenue, Saticoy, Nevada, 8450",
+          grade: "관리자",
+        },
+        {
+          _id: "61b05e5ca1d42045e4a33987",
+          id: "Powell",
+          pw: "7360b68f-573b-4304-819e-357f44933098",
+          index: 8,
+          picture: "http://placehold.it/32x32",
+          age: 20,
+          eyeColor: "green",
+          name: "Velez Ballard",
+          gender: "male",
+          company: "XURBAN",
+          email: "velezballard@xurban.com",
+          phone: "+1 (920) 460-3483",
+          address: "949 Micieli Place, Oretta, Virgin Islands, 8206",
+          grade: "새싹",
+        },
+      ];
+      // 콜백헬 만들기
+      //콜백지옥
+      class GetUserData {
+        login(아이디, 비밀번호, 성공, 실패) {
+          const data = userdb.find(
+            (user) => user.id === 아이디 && user.pw === 비밀번호
+          );
+          if (data) {
+            성공(아이디);
+          } else {
+            실패(new Error("로그인 실패!"));
+          }
+        }
+        getUserDataSet(이용자, 성공, 실패) {
+          const data = userdb.find((user) => user.id === 이용자);
+          if (data) {
+            성공({
+              id: data.id,
+              picture: data.picture,
+              name: data.name,
+              company: data.company,
+              email: data.email,
+              grade: data.grade,
+            });
+          } else {
+            실패(new Error("데이터 베이스 로드 실패!"));
+          }
+        }
+      }
+
+      const userData = new GetUserData();
+      const id = "hojun";
+      const pw = "1234";
+      userData.login(
+        id,
+        pw,
+        (userID) => {
+          userData.getUserDataSet(
+            userID,
+            (userBasicInfo) => {
+              // grade에 따른 콜백을 하나 더 넣어줄 수 있습니다.
+              console.log(userBasicInfo);
+            },
+            (실패) => {
+              console.log(실패);
+            }
+          );
+        },
+        (실패) => {
+          console.log(실패);
+        }
+      );
+    </script>
+  </body>
+</html>
