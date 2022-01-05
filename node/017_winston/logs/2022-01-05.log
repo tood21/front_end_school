@@ -1,0 +1,4 @@
+2022-01-05 14:42:38 info: GET /
+2022-01-05 14:42:58 info: GET /
+2022-01-05 14:44:02 error: Error message
+2022-01-05 14:45:19 info: GET /notice/:id
